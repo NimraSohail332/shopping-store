@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My Shopping Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Shopping Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('products')">Products</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products" class="section">
+            <h2>Our Products</h2>
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be added dynamically here -->
+            </div>
+        </section>
+
+        <section id="about" class="section" style="display: none;">
+            <h2>About Us</h2>
+            <p>Welcome to our store! We offer a variety of products to suit your needs. Browse through our catalog to find something perfect for you!</p>
+        </section>
+
+        <section id="contact" class="section" style="display: none;">
+            <h2>Contact Us</h2>
+            <p>Name: Noman Sohail</p>
+            <p>Email: noman.sohail@example.com</p>
+            <p>Contact Number: +1234567890</p>
+            <p>If you have any questions, feel free to reach out!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Shopping Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
